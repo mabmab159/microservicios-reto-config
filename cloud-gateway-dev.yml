@@ -8,6 +8,5 @@ spring:
         - id: license-service-route
           uri: lb://license-service
           predicates:
-            - Path=/license/**
-          filters:
-            - StripPrefix=2
+            - Path=/**
+          
