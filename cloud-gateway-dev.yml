@@ -1,2 +1,14 @@
 server:
   port: ${CUSTOM.SERVER.PORT:8080}
+
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: license-service-route
+          uri: lb://license-service
+          predicates:
+            - Path=/license-service/**
+          filters:
+            - StripPrefix=2

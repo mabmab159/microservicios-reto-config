@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5bb49d1-b398-4a24-9869-db9a4588035b" name="Changes" comment="" />
+    <list default="true" id="b5bb49d1-b398-4a24-9869-db9a4588035b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway-dev.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +68,7 @@
       <workItem from="1712022716131" duration="2074000" />
       <workItem from="1712027276994" duration="1104000" />
       <workItem from="1712029090228" duration="844000" />
-      <workItem from="1712068123448" duration="646000" />
+      <workItem from="1712068123448" duration="1750000" />
     </task>
     <servers />
   </component>
