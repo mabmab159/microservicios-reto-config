@@ -6,7 +6,8 @@ spring:
     gateway:
       routes:
         - id: license-service-route
-          uri: http://localhost:9030/
+          uri: lb://license-service
           predicates:
             - Path=/**
-          
+          filters:
+            - StripPrefix=1
