@@ -11,4 +11,3 @@ spring:
             - Path=/**
           filters:
             - StripPrefix=1
-            - 
