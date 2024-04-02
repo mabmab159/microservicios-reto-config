@@ -9,5 +9,3 @@ spring:
           uri: lb://license-service
           predicates:
             - Path=/**
-          filters:
-            - StripPrefix=1
