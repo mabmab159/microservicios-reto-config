@@ -1,6 +1,5 @@
 server:
-  port: ${CUSTOM.SERVER.PORT:8080}
-
+  port: ${CUSTOM.SERVER.PORT:8000}
 
 spring:
   cloud:
