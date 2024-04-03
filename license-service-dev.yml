@@ -9,8 +9,6 @@ spring:
 # OpenAPI Configuration
 springdoc:
   api-docs:
-    path: /api-docs
     enabled: true
   swagger-ui:
-    path: /openapi.yml
     enabled: false
