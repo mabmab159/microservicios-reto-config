@@ -5,23 +5,3 @@ spring:
   data:
     mongodb:
       uri: mongodb://miguel:miguel@localhost:27017/miguel?authSource=admin
-
-info:
-  app:
-    name: Product Service Mitocode
-    description: Módulo de la arquitectura de Microservicios que disponibiliza la información de los productos
-    version: 0.0.1
-
-springdoc:
-  api-docs:
-    path: /api-docs
-    enabled: true
-  swagger-ui:
-    path: /openapi.yml
-    enabled: true
-
-logging:
-  level:
-    org:
-      springframework:
-        web: DEBUG
