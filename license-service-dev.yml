@@ -19,3 +19,7 @@ springdoc:
   swagger-ui:
     path: /openapi.yml
     enabled: true
+
+logging:
+  level:
+    org.springframework.web.servlet.mvc: DEBUG
