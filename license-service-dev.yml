@@ -22,4 +22,6 @@ springdoc:
 
 logging:
   level:
-    org.springframework.web.servlet.mvc: DEBUG
+    org:
+      springframework:
+        web: DEBUG
