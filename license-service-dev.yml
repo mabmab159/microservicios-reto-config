@@ -7,11 +7,10 @@ spring:
       uri: mongodb://miguel:miguel@localhost:27017/miguel?authSource=admin
 
 
-# OpenAPI Configuration
 springdoc:
   api-docs:
+    path: /api-docs
     enabled: true
   swagger-ui:
+    path: /openapi.yml
     enabled: true
-    csrf:
-      enabled: true
