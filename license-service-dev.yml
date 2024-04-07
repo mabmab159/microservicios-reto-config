@@ -5,3 +5,13 @@ spring:
   data:
     mongodb:
       uri: mongodb://miguel:miguel@localhost:27017/miguel?authSource=admin
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        base-path: /actuator
+  tracing:
+    sampling:
+      probability: 1.0
