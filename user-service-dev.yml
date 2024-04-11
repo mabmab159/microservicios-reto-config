@@ -6,6 +6,10 @@ spring:
     mongodb:
       uri: mongodb://miguel:miguel@localhost:27017/miguel?authSource=admin
 
+jwtUtil:
+  secret: eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcxMjgxNDA1NywiaWF0IjoxNzEyODE0MDU3fQ.7ELdTkMTYM5p48ZhhQSw-CMoXfd4Ue4ebtYSBg13NsE
+  expirationTime: 3600
+
 management:
   endpoints:
     web:
