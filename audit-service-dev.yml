@@ -1,0 +1,20 @@
+server:
+  port: ${CUSTOM.SERVER.PORT:9040}
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://miguel:miguel@localhost:27019/miguel?authSource=admin
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        base-path: /actuator
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: ${ZIPKIN.SERVER.HOSTNAME:http://localhost:9411/api/v2/spans}
