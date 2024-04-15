@@ -18,3 +18,10 @@ management:
   zipkin:
     tracing:
       endpoint: ${ZIPKIN.SERVER.HOSTNAME:http://localhost:9411/api/v2/spans}
+
+kafka:
+  miguel:
+    topic: miguel-topic
+    topic2: miguel-topic-2
+    port: 9092
+    server: 127.0.0.1
