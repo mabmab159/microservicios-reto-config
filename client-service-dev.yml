@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: {MONGODB.URL.CONNECTION:mongodb://miguel:miguel@localhost:27017/miguel?authSource=admin}
+      uri: ${MONGODB.URL.CONNECTION:mongodb://miguel:miguel@localhost:27017/miguel?authSource=admin}
 
 management:
   endpoints:
