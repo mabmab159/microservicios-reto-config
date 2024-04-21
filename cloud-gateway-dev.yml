@@ -12,7 +12,7 @@ spring:
           filters:
             - StripPrefix=2
         - id: license-service-query-route
-          uri: ws://license-service-query
+          uri: lb://license-service-query
           predicates:
             - Path=/**
         - id: user-service-route
