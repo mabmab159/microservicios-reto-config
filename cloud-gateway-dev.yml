@@ -5,17 +5,12 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: license-service-route
+        - id: license-service-query-route
           uri: lb://license-service-query
           predicates:
             - Path=//api/license/**
           filters:
             - StripPrefix=2
-      
-        - id: license-service-query-route
-          uri: lb://license-service-query
-          predicates:
-            - Path=//**
       
         - id: user-service-route
           uri: lb://user-service
