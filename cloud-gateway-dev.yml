@@ -11,6 +11,12 @@ spring:
             - Path=/api/license/**
           filters:
             - StripPrefix=2
+        - id: license-service-query-route
+          uri: lb://license-service-query
+          predicates:
+            - Path=/api/license-query/**
+          filters:
+            - StripPrefix=2
         - id: user-service-route
           uri: lb://user-service
           predicates:
