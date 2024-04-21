@@ -10,13 +10,13 @@ spring:
           predicates:
             - Path=/api/license/**
           filters:
-            - StripPrefix = 2
+            - StripPrefix=2
         - id: user-service-route
           uri: lb://user-service
           predicates:
             - Path=/api/user/**
           filters:
-            - StripPrefix = 2
+            - StripPrefix=2
 
 management:
   endpoints:
