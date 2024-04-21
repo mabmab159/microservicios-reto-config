@@ -24,4 +24,4 @@ kafka:
     topic: miguel-topic
     topic2: miguel-topic-2
     port: 9092
-    server: 172.18.0.1
+    server: localhost
