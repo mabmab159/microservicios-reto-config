@@ -8,14 +8,14 @@ spring:
         - id: license-service-query-route
           uri: lb://license-service-query
           predicates:
-            - Path=//api/license/**
+            - Path=/api/license/**
           filters:
             - StripPrefix=2
       
         - id: user-service-route
           uri: lb://user-service
           predicates:
-            - Path=//api/user/**
+            - Path=/api/user/**
           filters:
             - StripPrefix=2
 
