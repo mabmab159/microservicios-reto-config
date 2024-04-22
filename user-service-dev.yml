@@ -5,6 +5,8 @@ spring:
   data:
     mongodb:
       uri: ${MONGODB.URL.CONNECTION:mongodb://miguel:miguel@localhost:27017/miguel?authSource=admin}
+  main:
+    allow-bean-definition-overriding: true
 
 miguel:
   security:
