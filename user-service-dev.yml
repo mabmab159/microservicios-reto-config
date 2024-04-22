@@ -24,7 +24,9 @@ management:
 
 kafka:
   miguel:
-    topic: miguel-topic
-    topic2: miguel-topic-2
+    topic-audit: miguel-topic-audit
+    topic-client: miguel-topic-client
+    topic-license: miguel-topic-license
+    topic-user: miguel-topic-user
     port: 9092
     server: 127.0.0.1
