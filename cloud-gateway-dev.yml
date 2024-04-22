@@ -59,7 +59,7 @@ management:
   zipkin:
     tracing:
       endpoint: ${ZIPKIN.SERVER.HOSTNAME:http://localhost:9411/api/v2/spans}
+
 miguel:
   security:
     key: eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcxMjgxNDA1NywiaWF0IjoxNzEyODE0MDU3fQ.7ELdTkMTYM5p48ZhhQSw-CMoXfd4Ue4ebtYSBg13NsE
-  

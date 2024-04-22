@@ -6,9 +6,9 @@ spring:
     mongodb:
       uri: ${MONGODB.URL.CONNECTION:mongodb://miguel:miguel@localhost:27018/miguel?authSource=admin}
 
-jwt:
-  secret: eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcxMjgxNDA1NywiaWF0IjoxNzEyODE0MDU3fQ.7ELdTkMTYM5p48ZhhQSw-CMoXfd4Ue4ebtYSBg13NsE
-  expiration: 3600
+miguel:
+  security:
+    key: eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcxMjgxNDA1NywiaWF0IjoxNzEyODE0MDU3fQ.7ELdTkMTYM5p48ZhhQSw-CMoXfd4Ue4ebtYSBg13NsE
 
 management:
   endpoints:
