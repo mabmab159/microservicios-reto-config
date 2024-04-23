@@ -1,0 +1,33 @@
+server:
+  port: ${CUSTOM.SERVER.PORT:9025}
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB.URL.CONNECTION:mongodb://miguel:miguel@localhost:27018/miguel?authSource=admin}
+
+miguel:
+  security:
+    key: eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcxMjgxNDA1NywiaWF0IjoxNzEyODE0MDU3fQ.7ELdTkMTYM5p48ZhhQSw-CMoXfd4Ue4ebtYSBg13NsE
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        base-path: /actuator
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: ${ZIPKIN.SERVER.HOSTNAME:http://localhost:9411/api/v2/spans}
+
+kafka:
+  miguel:
+    topic-audit: miguel-topic-audit
+    topic-client: miguel-topic-client
+    topic-license: miguel-topic-license
+    topic-user: miguel-topic-user
+    port: 9092
+    server: 127.0.0.1
