@@ -30,4 +30,4 @@ kafka:
     topic-license: miguel-topic-license
     topic-user: miguel-topic-user
     port: 9092
-    server: 127.0.0.1
+    server: 172.19.0.1
